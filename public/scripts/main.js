@@ -8,6 +8,7 @@ require.config({
         'ngResource': 'bower_components/angular-resource/angular-resource.min',
         'ui.router': 'bower_components/angular-ui-router/release/angular-ui-router.min',
         'lodash': 'bower_components/ng-lodash/build/ng-lodash.min',
+        'moment': 'bower_components/moment/min/moment-with-locales.min',
         'routes': 'scripts/routes',
         'app': 'scripts/app',
         'services': 'scripts/services/_index',

@@ -22,8 +22,8 @@ define(['app'], function (app) {
                     }
                 },
                 resolve: {
-                    cv: ['$resource', function($resource){
-                        return $resource('data/cv.json').get().$promise;
+                    cv: ['Rest', function(Rest){
+                        return Rest.resource('data/cv.json').get().$promise;
                     }]
                 }
             }
