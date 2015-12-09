@@ -1,0 +1,63 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  body .body-inner {
+    width: 1000px;
+    margin: 25px auto 0; }
+  body header {
+    background: #eee;
+    padding: 25px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px; }
+    body header h1 {
+      margin-top: 0; }
+  body nav .nav {
+    list-style: none;
+    padding: 0; }
+    body nav .nav li {
+      display: inline-block;
+      margin: 0 3px; }
+      body nav .nav li a {
+        display: block;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        background: #eeeeee;
+        padding: 0 15px;
+        text-decoration: none;
+        color: #333333; }
+        body nav .nav li a:hover {
+          background: #333333;
+          color: #eee;
+          text-decoration: none; }
+        body nav .nav li a.active {
+          background: #666666;
+          color: #eee;
+          text-decoration: none; }
+  body .content {
+    padding: 10px; }
+  body table {
+    width: 100%;
+    border-spacing: 0;
+    margin-bottom: 15px; }
+    body table thead {
+      background: #eee; }
+    body table th {
+      text-align: left;
+      padding: 5px; }
+    body table td {
+      padding: 5px;
+      border-bottom: dotted 1px #ddd; }
+      body table td.label {
+        font-weight: bold;
+        width: 15%; }
+      body table td.value {
+        width: 20%; }
+      body table td.company {
+        width: 20%; }
+      body table td.description {
+        width: 45%; }
+
+/*# sourceMappingURL=style.css.map */

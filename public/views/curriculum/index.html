@@ -1,0 +1,38 @@
+<div class="content">
+    <h2>Personal Information</h2>
+
+    <table>
+        <tbody>
+            <tr>
+                <td class="label">Name:</td>
+                <td class="value">{{name}}</td>
+            </tr>
+
+            <tr>
+                <td class="label">Date of Birth:</td>
+                <td class="value">{{date_of_birth}}</td>
+            </tr>
+
+            <tr>
+                <td class="label">Place of Birth:</td>
+                <td class="value">{{place_of_birth}}</td>
+            </tr>
+
+            <tr>
+                <td class="label">Address:</td>
+                <td class="value">{{address}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Contacts</h3>
+
+    <table>
+        <tbody>
+            <tr ng-repeat="contact in contacts">
+                <td class="label">{{contact.type}}</td>
+                <td class="value">{{contact.contact}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

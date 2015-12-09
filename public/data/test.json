@@ -1,0 +1,16 @@
+{
+    "name": "Branislav Zvolensky",
+    "date_of_birth": "1972-06-08 04:06:00",
+    "place_of_birth": "Bratislava",
+    "address": "Patas 103, 92901 Patas, Slovakia",
+    "contacts": [
+        {
+            "type": "Phone",
+            "contact": "+421 903 454784"
+        },
+        {
+            "type": "Email",
+            "contact": "brano@zvolensky.info"
+        }
+    ]
+}

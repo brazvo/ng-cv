@@ -1,0 +1,92 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    .body-inner {
+        width: 1000px;
+        margin: 25px auto 0;
+    }
+
+    header {
+        background: #eee;
+        padding: 25px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+
+        h1 {
+            margin-top: 0;
+        }
+    }
+
+    nav {
+        .nav {
+            list-style: none;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                margin: 0 3px;
+
+                a {
+                    display: block;
+                    height: 36px;
+                    line-height: 36px;
+                    text-align: center;
+                    background: #eeeeee;
+                    padding: 0 15px;
+                    text-decoration: none;
+                    color: #333333;
+
+                    &:hover {
+                        background: #333333;
+                        color: #eee;
+                        text-decoration: none;
+                    }
+
+                    &.active {
+                        background: #666666;
+                        color: #eee;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+        border-spacing: 0;
+        margin-bottom: 15px;
+        thead {
+            background: #eee;
+        }
+        th {
+            text-align: left;
+            padding: 5px;
+        }
+        td {
+            padding: 5px;
+            border-bottom: dotted 1px #ddd;
+            &.label {
+                font-weight: bold;
+                width: 15%;
+            }
+            &.value {
+                width: 20%;
+            }
+            &.company {
+                width: 20%;
+            }
+            &.description {
+                width: 45%;
+            }
+        }
+    }
+}
+

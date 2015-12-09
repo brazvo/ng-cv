@@ -1,0 +1,22 @@
+<div class="content">
+    <h2>Last 3 Work Experiences</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Period</th>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in jobs">
+                <td class="label">{{item.period}}</td>
+                <td class="company">{{item.company}}</td>
+                <td class="value">{{item.position}}</td>
+                <td class="description">{{item.description}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

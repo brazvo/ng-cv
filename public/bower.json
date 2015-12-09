@@ -1,0 +1,29 @@
+{
+  "name": "ng-base-skeleton",
+  "authors": [
+    "Branislav Zvolensky <bzvolensky@dpd.sk>"
+  ],
+  "description": "Base skeleton for Angular app",
+  "main": "bower.json",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-resource": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "angular": "angularjs#~1.4.8",
+    "ng-lodash": "~0.3.0",
+    "requirejs": "~2.1.22",
+    "requirejs-domready": "~2.0.1"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name"         : "ng-base-skeleton",
+  "version"      : "0.0.0",
+  "description"  : "Simple angular skeleton",
+  "main"         : "server.js",
+  "author"       : "BZvolensky",
+  "dependencies" : {
+    "express"    : "~4.7.2",
+    "requirejs": "~2.1.2"
+  }
+}
