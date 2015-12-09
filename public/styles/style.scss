@@ -3,55 +3,10 @@ body {
     margin: 0;
     width: 100%;
 
-    .body-inner {
-        width: 1000px;
-        margin: 25px auto 0;
-    }
-
     header {
-        background: #eee;
-        padding: 25px;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        border-radius: 15px;
-
+        margin-top: 25px;
         h1 {
             margin-top: 0;
-        }
-    }
-
-    nav {
-        .nav {
-            list-style: none;
-            padding: 0;
-
-            li {
-                display: inline-block;
-                margin: 0 3px;
-
-                a {
-                    display: block;
-                    height: 36px;
-                    line-height: 36px;
-                    text-align: center;
-                    background: #eeeeee;
-                    padding: 0 15px;
-                    text-decoration: none;
-                    color: #333333;
-
-                    &:hover {
-                        background: #333333;
-                        color: #eee;
-                        text-decoration: none;
-                    }
-
-                    &.active {
-                        background: #666666;
-                        color: #eee;
-                        text-decoration: none;
-                    }
-                }
-            }
         }
     }
 
@@ -71,9 +26,7 @@ body {
             padding: 5px;
         }
         td {
-            padding: 5px;
-            border-bottom: dotted 1px #ddd;
-            &.label {
+            &.label-col {
                 font-weight: bold;
                 width: 15%;
             }
@@ -85,6 +38,30 @@ body {
             }
             &.description {
                 width: 45%;
+            }
+        }
+
+        &.columns-2 {
+            td.value {
+                width: 85%;
+            }
+        }
+
+        &.columns-3 {
+            td.value {
+                width: 40%;
+            }
+        }
+
+        &.columns-4 {
+            td.company {
+                width: 25%;
+            }
+            td.value {
+                width: 25%;
+            }
+            td.description {
+                width: 35%;
             }
         }
     }

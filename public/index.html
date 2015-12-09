@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HELLO WORLD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="styles/style.css"/>
 
     <script src="bower_components/requirejs/require.js"></script>
@@ -10,18 +12,18 @@
         require.config({
             baseUrl: '.',
             paths: {
-                //"main": "scripts/main-built",
-                "main": "scripts/main"
+                "main": "scripts/main-built",
+                //"main": "scripts/main"
             }
         });
         require(["main"]);
     </script>
 </head>
 <body>
-    <div class="body-inner">
+    <div class="container">
         <header ui-view="header"></header>
 
-        <nav ui-view="navigation"></nav>
+        <nav ui-view="navigation" class="navbar navbar-default"></nav>
 
         <div ui-view="content"></div>
     </div>

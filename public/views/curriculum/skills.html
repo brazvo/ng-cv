@@ -4,7 +4,7 @@
     <div ng-repeat="groupItem in skills">
         <h3>{{groupItem.group}}</h3>
 
-        <table>
+        <table class="table table-bordered columns-3">
             <thead>
             <tr>
                 <th>Skill</th>
@@ -14,7 +14,7 @@
             </thead>
             <tbody>
             <tr ng-repeat="item in groupItem.items">
-                <td class="label">{{item.skill}}</td>
+                <td class="label-col">{{item.skill}}</td>
                 <td class="value">{{item.level}}</td>
                 <td class="description">{{item.description}}</td>
             </tr>

@@ -1,25 +1,25 @@
 <div class="content">
     <h2>Personal Information</h2>
 
-    <table>
+    <table class="table table-bordered columns-2">
         <tbody>
             <tr>
-                <td class="label">Name:</td>
+                <td class="label-col">Name:</td>
                 <td class="value">{{name}}</td>
             </tr>
 
             <tr>
-                <td class="label">Date of Birth:</td>
+                <td class="label-col">Date of Birth:</td>
                 <td class="value">{{date_of_birth}}</td>
             </tr>
 
             <tr>
-                <td class="label">Place of Birth:</td>
+                <td class="label-col">Place of Birth:</td>
                 <td class="value">{{place_of_birth}}</td>
             </tr>
 
             <tr>
-                <td class="label">Address:</td>
+                <td class="label-col">Address:</td>
                 <td class="value">{{address}}</td>
             </tr>
         </tbody>
@@ -27,10 +27,10 @@
 
     <h3>Contacts</h3>
 
-    <table>
+    <table class="table table-bordered columns-2">
         <tbody>
             <tr ng-repeat="contact in contacts">
-                <td class="label">{{contact.type}}</td>
+                <td class="label-col">{{contact.type}}</td>
                 <td class="value">{{contact.contact}}</td>
             </tr>
         </tbody>

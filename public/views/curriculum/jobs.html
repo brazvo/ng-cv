@@ -1,7 +1,7 @@
 <div class="content">
     <h2>Last 3 Work Experiences</h2>
 
-    <table>
+    <table class="table table-bordered columns-4">
         <thead>
             <tr>
                 <th>Period</th>
@@ -12,7 +12,7 @@
         </thead>
         <tbody>
             <tr ng-repeat="item in jobs">
-                <td class="label">{{item.period}}</td>
+                <td class="label-col">{{item.period}}</td>
                 <td class="company">{{item.company}}</td>
                 <td class="value">{{item.position}}</td>
                 <td class="description">{{item.description}}</td>

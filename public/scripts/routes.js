@@ -20,6 +20,11 @@ define(['app'], function (app) {
                         templateUrl: 'views/curriculum/index.html',
                         controller: 'CurriculumCtrl'
                     }
+                },
+                resolve: {
+                    cv: ['$resource', function($resource){
+                        return $resource('data/cv.json').get().$promise;
+                    }]
                 }
             }
         );
@@ -71,6 +76,18 @@ define(['app'], function (app) {
                     'content@': {
                         templateUrl: 'views/curriculum/skills.html',
                         controller: 'CurriculumCtrl'
+                    }
+                }
+            }
+        );
+
+        $stateProvider.state(
+            'curriculum.about',
+            {
+                url: '/about',
+                views: {
+                    'content@': {
+                        templateUrl: 'views/curriculum/about.html'
                     }
                 }
             }
