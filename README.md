@@ -1,6 +1,6 @@
 # Angular Curriculum Vitae
 
-This is base skeleton for angular application
+This is Angular version of my CV
 
 ## Dependencies
 
