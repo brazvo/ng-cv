@@ -1,38 +1,129 @@
-<div class="content">
-    <h2>Personal Information</h2>
+<!--About Tab-->
+<section id="about" class="bgWhite ofsInBottom">
 
-    <table class="table table-bordered columns-2">
-        <tbody>
-            <tr>
-                <td class="label-col">Name:</td>
-                <td class="value">{{name}}</td>
-            </tr>
+    <!--About -->
+    <div class="about">
 
-            <tr>
-                <td class="label-col">Date of Birth:</td>
-                <td class="value">{{date_of_birth}}</td>
-            </tr>
+        <!--Main title-->
 
-            <tr>
-                <td class="label-col">Place of Birth:</td>
-                <td class="value">{{place_of_birth}}</td>
-            </tr>
+        <div class="main-title">
+            <h1>who am i</h1>
 
-            <tr>
-                <td class="label-col">Address:</td>
-                <td class="value">{{address}}</td>
-            </tr>
-        </tbody>
-    </table>
+            <div class="divider">
+                <div class="zigzag large clearfix " data-svg-drawing="yes">
+                    <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+</svg>
+                </div>
+            </div>
+        </div>
 
-    <h3>Contacts</h3>
+        <!--End main title-->
 
-    <table class="table table-bordered columns-2">
-        <tbody>
-            <tr ng-repeat="contact in contacts">
-                <td class="label-col">{{contact.type}}</td>
-                <td class="value">{{contact.contact}}</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+
+        <!--Content-->
+        <div class="content">
+
+            <!--Block content-->
+            <div class="block-content margBSmall">
+
+                <div class=" profile margBSmall">
+                    <h1>{{name}}</h1>
+
+                    <h3>{{position}}</h3>
+                </div>
+
+                <!--Row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <p ng-repeat="row in description">{{row}}</p>
+                    </div>
+                </div>
+                <!--End row-->
+
+            </div>
+            <!--End block content-->
+
+
+            <!--Block content-->
+            <div class="block-content">
+
+                <div class="info">
+
+                    <!--Row-->
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <ul class="info-list clearfix">
+                                <li><span class="inf">Name </span> <span
+                                        class="value">{{name}}</span></li>
+                                <li><span class="inf">Date of birth</span> <span class="value"> {{date_of_birth}} </span>
+                                </li>
+                                <li><span class="inf">Place of birth</span> <span class="value"> {{place_of_birth}} </span>
+                                </li>
+                                <li><span class="inf">Address</span> <span class="value"> {{address}}</span>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <ul class="info-list">
+                                <li ng-repeat="contact in contacts"><span class="inf">{{contact.type}}</span> <span class="value">{{contact.contact}}</span>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                    <!--End row-->
+
+                </div>
+
+            </div>
+            <!--End block content-->
+
+
+        </div>
+        <!--End content-->
+
+
+        <!--Button-->
+        <div class="button margTop ofsInTop tCenter">
+
+            <div class="divider">
+                <div class="zigzag large clearfix " data-svg-drawing="yes">
+                    <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+		<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+			29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+		</svg>
+                </div>
+            </div>
+
+
+            <!--Row-->
+            <div class="row ">
+
+
+                <div class="col-md-12">
+                    <a class="but opc-1 ico" href="#">Download my cv</a>
+                </div>
+
+
+            </div>
+            <!--End row-->
+
+
+        </div>
+        <!--End button-->
+
+
+    </div>
+    <!--End about-->
+
+</section>
+<!--End about tab-->

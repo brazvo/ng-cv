@@ -1,8 +1,13 @@
 {
     "name": "Branislav Zvolensky",
+    "position": "PHP and Web developer",
     "date_of_birth": "1972-06-08 04:06:00",
     "place_of_birth": "Bratislava",
     "address": "Patas 103, 92901 Patas, Slovakia",
+    "description": [
+        "Welcome on my CV web page. I'm a PHP/WEB developer. I prefer full stack work. It means I like working on both sides of web applications - front-ends and back-ends. The primary technology I am working with is PHP, but I am very glad when I have a chance to work with another technologies to face against new challenges or to improve my skills.",
+        "If you're looking for a co-worker who is a team mate open to the world of new technologies with enthusiasm to be better, don't hesitate to contact me."
+    ],
     "contacts": [
         {
             "type": "Phone",
@@ -17,7 +22,7 @@
         {
             "company": "DPD Parcel Distribution",
             "position": "Senior IT Developer",
-            "period": "2015/04 - Presence",
+            "period": "2015/04 - Current",
             "description": "I work on internal systems such as Intranet, CRM, Cashcheck System, etc., with technologies such as PHP 5.5, Soap, JSON, REST, MSSQL, Postgres, CouchDB, Git, Angular"
         },
         {
@@ -46,8 +51,8 @@
             "items": [
                 {
                     "skill": "Slovak",
-                    "level": "Mother's Language",
-                    "description": ""
+                    "level": "Expert",
+                    "description": "Mother's Language"
                 },
                 {
                     "skill": "English (spoken)",
@@ -111,12 +116,12 @@
                 },
                 {
                     "skill": "SVN",
-                    "level": "Internediate",
+                    "level": "Intermediate",
                     "description": "Tortoise SVN"
                 },
                 {
                     "skill": "Adobe Photoshop",
-                    "level": "Internediate",
+                    "level": "Intermediate",
                     "description": "Have no problem to extract graphics to be implemented into HTLM and CSS."
                 }
             ]
@@ -126,8 +131,8 @@
             "items": [
                 {
                     "skill": "Driving Licence C",
-                    "level": "Over 500000 km",
-                    "description": ""
+                    "level": "Expert",
+                    "description": "Over 500000 km without accident"
                 }
             ]
         }

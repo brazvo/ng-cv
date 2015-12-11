@@ -5,27 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Curriculum Vitae</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="styles/style.css"/>
+    <link href="theme/css/owl-carousel/owl.carousel.css" rel="stylesheet" media="all">
+    <link href="theme/css/owl-carousel/owl.theme.css" rel="stylesheet" media="all">
+    <link href="theme/css/magnific-popup.css" type="text/css" rel="stylesheet" media="all"/>
+    <link href="theme/css/font.css" rel="stylesheet" type="text/css" media="all">
+    <link href="theme/css/fontello.css" rel="stylesheet" type="text/css" media="all">
+    <link href="theme/css/base.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="theme/css/main.css" rel="stylesheet" type="text/css" media="all"/>
 
     <script src="bower_components/requirejs/require.js"></script>
     <script>
         require.config({
             baseUrl: '.',
             paths: {
-                "main": "scripts/main-built",
-                //"main": "scripts/main"
+                //"main": "scripts/main-built",
+                "main": "scripts/main"
             }
         });
         require(["main"]);
     </script>
 </head>
 <body>
+<!--Wrapper-->
+<div id="wrapper" class="margLTop  margLBottom">
+
+    <!--Container-->
     <div class="container">
-        <header ui-view="header"></header>
+        <div class="row ">
+            <!--Left content-->
 
-        <nav ui-view="navigation" class="navbar navbar-default"></nav>
+            <div class="col-md-3 nopr left-content">
 
-        <div ui-view="content"></div>
+                <!--Header-->
+                <header id="header">
+
+
+                    <!--Main header-->
+                    <div class="main-header">
+
+                        <!--Profile image-->
+                        <figure class="img-profile">
+                            <img src="theme/img/profile.jpg" alt=""/>
+
+                            <figcaption class="name-profile">
+                                <span>Braňo Zvolenský <sup>&reg;</sup></span>
+                            </figcaption>
+
+                        </figure>
+                        <!--End profile image-->
+
+
+                        <!--Main navigation-->
+                        <nav id="main-nav" class="main-nav clearfix tabbed" ui-view="navigation"></nav>
+                        <!--End main navigation-->
+
+
+                    </div>
+                    <!--End main header-->
+
+                    <div class="bottom-header bgWhite ofsTSmall ofsBSmall tCenter">
+                        <ul class="social">
+                            <li><a href="https://sk.linkedin.com/in/branislavzvolensky" target="_blank"><i class="icon-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/Branislav-Zvolensky-238847796167258/" target="_blank"><i class="icon-facebook"></i></a></li>
+                            <li><a href="https://plus.google.com/u/0/100516405335974529380/" target="_blank"><i class="icon-gplus"></i></a></li>
+                        </ul>
+
+                        <p>&copy; 2015 Braňo Zvolenský</p>
+                        <p>Angular version: <app-version></app-version></p>
+
+                    </div>
+
+
+                </header>
+                <!--End  header-->
+
+
+            </div>
+            <!--End left content-->
+
+
+            <!--Right content-->
+            <div class="col-md-9 right-content">
+
+                <div ui-view="content"></div>
+
+            </div>
+            <!--End right content-->
+
+
+        </div>
+        <!--End  row-->
+
+
     </div>
+    <!--End  container-->
+
+
+</div>
+<!--End wrapper-->
 </body>
 </html>

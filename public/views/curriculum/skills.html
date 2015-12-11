@@ -1,24 +1,75 @@
-<div class="content">
-    <h2>Skills</h2>
+<!--About Tab-->
+<section id="about" class="bgWhite ofsInBottom">
 
-    <div ng-repeat="groupItem in skills">
-        <h3>{{groupItem.group}}</h3>
+    <!--About -->
+    <div class="about">
 
-        <table class="table table-bordered columns-3">
-            <thead>
-            <tr>
-                <th>Skill</th>
-                <th>Level</th>
-                <th>Description</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="item in groupItem.items">
-                <td class="label-col">{{item.skill}}</td>
-                <td class="value">{{item.level}}</td>
-                <td class="description">{{item.description}}</td>
-            </tr>
-            </tbody>
-        </table>
+        <!--Main title-->
+
+        <div class="main-title">
+            <h1>my skills</h1>
+
+            <div class="divider">
+                <div class="zigzag large clearfix " data-svg-drawing="yes">
+                    <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+	</svg>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <!--End main title-->
+
+
+        <!--Content-->
+        <div class="content">
+
+            <!--Block content-->
+            <div class="block-content margBMedium margTMedium" ng-repeat="groupItem in skills">
+
+
+                <!--Skill design-->
+                <div class="skill" ng-class="groupItem.group.toLowerCase()">
+
+
+                    <!--Row-->
+                    <div class="row">
+
+                        <div class="vc">
+
+                            <div class="col-md-12">
+
+                                <ul class="skills-list clearfix">
+                                    <li ng-repeat="item in groupItem.items">
+                                        <h4>{{item.skill}} <small ng-if="item.description">({{item.description}})</small></h4>
+                                        <skill-level-progress level="item.level"></skill-level-progress>
+                                    </li>
+                                </ul>
+
+                                <div class="title" ng-class="groupItem.group.toLowerCase()">
+                                    <span>{{groupItem.group}}</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--End row-->
+
+                </div>
+                <!--End skill design-->
+
+            </div>
+            <!--End block content-->
+
+
+        </div>
+        <!--End content-->
     </div>
-</div>
+</section>

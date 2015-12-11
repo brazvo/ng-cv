@@ -1,3 +1,4 @@
 define([
-    './version'
+    './version',
+    './skill-level/skillLevel'
 ], function(){});
