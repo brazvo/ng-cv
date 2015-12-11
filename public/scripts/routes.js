@@ -23,7 +23,7 @@ define(['app'], function (app) {
                 },
                 resolve: {
                     cv: ['Rest', function(Rest){
-                        return Rest.resource('data/cv.json').get().$promise;
+                        return Rest.resource('http://www.zvolensky.info/api/cv/').get().$promise;
                     }]
                 }
             }
